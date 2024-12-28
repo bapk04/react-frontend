@@ -1,0 +1,138 @@
+.admin-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.admin-auth-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.admin-auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.admin-auth-container input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admin-auth-container button {
+  width: 100%;
+  padding: 15px;
+  background: #1b5576;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.admin-auth-container button:hover {
+  background: #210e9e;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* admin page */
+
+.admin-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-title {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meeting-list {
+  width: 45%;
+}
+
+.list-title {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.meeting-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-item:hover {
+  background-color: #e0e0e0;
+}
+
+.meeting-item h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.meeting-item p {
+  font-size: 1em;
+  color: #666;
+}
+
+.message-history {
+  width: 50%;
+}
+
+.message-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.message-history th, .message-history td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.message-history th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.message-history tr:hover {
+  background-color: #f9f9f9;
+}
+
+.error {
+  color: red;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+}

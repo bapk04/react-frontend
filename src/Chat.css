@@ -1,0 +1,142 @@
+.chat-container {
+  width: 400px; /* Điều chỉnh chiều rộng nếu cần */
+  position: fixed;
+  right: 1px; /* Thêm khoảng cách từ cạnh phải */
+  top: 30px; /* Thêm khoảng cách từ cạnh trên */
+  bottom: 2px; /* Thêm khoảng cách từ cạnh dưới */
+  border: 3px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: calc(100% - 20px); /* Điều chỉnh khoảng cách */
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #e6f7ff; /* Thay đổi màu nền cho tin nhắn */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #333; /* Thay đổi màu chữ */
+  word-break: break-word;
+}
+
+.sent-image {
+  max-width: 200px;
+  max-height: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  background: #416792;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.chat-input button:hover {
+  background: #0056b3;
+}
+
+.emoji-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.emoji-btn:hover {
+  transform: scale(1.2);
+}
+
+.emoji-picker-popup {
+  position: absolute;
+  max-width: 90%;
+  bottom: 80px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 10px;  
+  padding: 10px;
+  z-index: 10;
+}
+
+.emoji-picker-react {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emoji-picker-react .emoji-group {
+  padding: 7px;
+}
+
+.emoji-picker-react .emoji-group .emoji-img {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+}
+
+#fileUpload {
+  display: none;
+}
+
+.btn-file {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-file:hover {
+  transform: scale(1.2);
+}
+
+.send:hover {
+  transform: scale(1.2);
+}
